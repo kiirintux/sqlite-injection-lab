@@ -1,0 +1,100 @@
+body {
+    font-family: "Ubuntu", sans-serif;
+    background-color: #222;
+    color: #c8c8c8;
+}
+
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 0px;
+}
+
+.sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+    border-bottom: 1px solid rgba(100,100,100,0.5)
+}
+    
+.sidebar .parent{
+    color: white;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+/*
+.sidebar h1{
+    padding: 16px;
+    font-size: 20px;
+    color: white;
+    display: block;
+    background-color: #4183D7;
+}
+
+.sidebar h1:hover {
+    color: #f1f1f1;
+}
+*/
+    
+.plogo{
+    padding: 10px;
+}
+    
+.logo{
+    border-radius: 50%;
+    width: 150px;
+}
+    
+.logo:hover{
+     -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(100%); /* FF 35+ */
+}
+
+.main {
+    margin-left: 250px; /* Same as the width of the sidenav */
+/*    font-size: 13px;  Increased text to enable scrolling */
+    padding: 0px 10px;
+    
+}
+
+.main a{
+    text-decoration: none;
+    color: #0084ff;
+}
+
+.parent{
+    background-color: #bd081c;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
+
+.cover{
+    width: 250px;
+}
+    
+.sqlite{
+    width: 400px;
+     -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(100%); /* FF 35+ */
+}
+    
+.sqlite:hover{
+     -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(0%); /* FF 35+ */
+}
